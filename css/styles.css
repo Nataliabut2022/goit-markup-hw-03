@@ -82,8 +82,9 @@ img {
 
 
 .wrap {
-    display: flex;    
-    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;  
 }
 
 .site-nav {
@@ -135,9 +136,7 @@ img {
 }
 
 .hero {
-    background-color: #2F303A;  
-    width: 1200px;
-     
+    background-color: #2F303A;     
 }
 
 .hero-title {    
@@ -172,9 +171,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
 
 .btn2 {                 
     display: flex;
@@ -262,18 +258,16 @@ img {
     color: var(--secondary-txt-cl);
 }
 
-
-
 .portfolio {
-    width: 1200px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.portfolio .list {
+.portfolio .list {    
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    
 }
 
 .portfolio-item {
