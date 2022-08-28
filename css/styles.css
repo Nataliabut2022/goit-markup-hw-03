@@ -22,8 +22,20 @@
 }
 
 .list {
-    list-style: none;    
+    list-style: none;   
+    margin: 0;
+    padding: 0; 
 }
+
+h1,h2,h3,p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+
 
 .page {
     background-color: var(--main-bg-cl);
@@ -72,10 +84,14 @@
 }
 
 .hero {
-    background-color: #2F303A;    
+    background-color: #2F303A;  
+     
 }
 
 .hero-title {
+    
+    width: 696px;
+    margin-bottom: 30px;
     color: var(--light-txt-cl);
     font-weight: 900;
     font-size: 44px;
@@ -86,16 +102,25 @@
 }
 
 .btn {
+    width: 216px;
+    min-height: 50px;
+    padding: 6px 28px;
     background-color: var(--accent-bg-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--light-txt-cl);
     font-size: 16px;
     line-height: calc(30 / 16);     
     letter-spacing: 0.06em;   
     font-family: inherit; 
-    font-weight: 700;    
+    font-weight: 700;   
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn2 {
+    
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     background-color: var(--secondary-bg-cl);    
@@ -113,7 +138,21 @@
     color: #FFFFFF;
 }
 
-.benefit-item-title {    
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.benefit {
+    width: 1170px;
+    
+        
+}
+
+
+.benefit-item-title {  
+    margin-bottom: 10px;  
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
@@ -127,7 +166,10 @@
     color: var(--secondary-txt-cl);
 }
 
+
+
 .work-title, .team-title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: calc(42 / 36);    
     letter-spacing: 0.03em;
@@ -143,6 +185,11 @@
                 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+
+.team-title {
+    margin-bottom: 50px;
 }
 
 .team-item-title {
@@ -182,6 +229,7 @@
 }
 
 .logo2 {
+    margin-bottom: 20px;
     color: var(--light-txt-cl);
     font-family: var(--secondary-font);
     font-size: 26px;
