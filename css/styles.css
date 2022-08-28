@@ -35,7 +35,17 @@ img {
     display: block;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 
+    outline: 2px solid red;
+    outline-offset: -2px;
+
+}
 
 .page {
     background-color: var(--main-bg-cl);
@@ -43,7 +53,21 @@ img {
     font-family: var(--main-font);  
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    margin-right: auto;
+    display: flex;
+    
+}
+
 .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
     color: var(--dark-txt-cl);
     font-family: var(--secondary-font);
     font-size: 26px;
@@ -56,21 +80,48 @@ img {
     color: var(--accent-txt-cl);
 }
 
-.nav-list {
+
+.wrap {
+    display: flex;    
+    padding-bottom: 50px;
+}
+
+.site-nav {
+    display: flex;   
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+
+.auth-nav {
+    display: flex;  
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-list {    
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
-.nav-item {
+.nav-item {    
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--secondary-txt-cl);
     cursor: pointer;
+}
+
+.nav-list:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .nav-list:hover, 
@@ -85,11 +136,11 @@ img {
 
 .hero {
     background-color: #2F303A;  
+    width: 1200px;
      
 }
 
-.hero-title {
-    
+.hero-title {    
     width: 696px;
     margin-bottom: 30px;
     color: var(--light-txt-cl);
@@ -99,6 +150,9 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {
@@ -119,8 +173,12 @@ img {
     margin-right: auto;
 }
 
-.btn2 {
-    
+
+
+
+.btn2 {                 
+    display: flex;
+    gap: 8px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     background-color: var(--secondary-bg-cl);    
@@ -144,13 +202,6 @@ img {
 }
 
 
-.benefit {
-    width: 1170px;
-    
-        
-}
-
-
 .benefit-item-title {  
     margin-bottom: 10px;  
     font-size: 14px;
@@ -166,6 +217,9 @@ img {
     color: var(--secondary-txt-cl);
 }
 
+.work {
+    display: flex;
+}
 
 
 .work-title, .team-title {
@@ -177,6 +231,7 @@ img {
 
 .team {
     background-color: var(--secondary-bg-cl);
+    display: flex;
 }
 
 .team-item {
@@ -207,9 +262,22 @@ img {
     color: var(--secondary-txt-cl);
 }
 
+
+
+.portfolio {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .portfolio .list {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+}
+
+.portfolio-item {
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-item-title {
