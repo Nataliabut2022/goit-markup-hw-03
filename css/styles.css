@@ -48,12 +48,15 @@ img {
 }
 
 .page {
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #000;
     background-color: var(--main-bg-cl);
     color: var(--main-txt-cl);
     font-family: var(--main-font);  
+}
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-container {
@@ -64,12 +67,11 @@ img {
 .header-nav {
     margin-right: auto;
     display: flex;
+    align-items: center;
     
 }
 
 .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
     margin-right: 93px;
     color: var(--dark-txt-cl);
     font-family: var(--secondary-font);
@@ -96,9 +98,7 @@ img {
 }
 
 .auth-nav {
-    display: flex;  
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: flex;      
 }
 
 .nav-list {    
@@ -195,12 +195,17 @@ img {
 
 .section {
     padding-top: 200px;
-    padding-bottom: 200px;
-    
+    padding-bottom: 200px;    
+}
+
+.our-benefit {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .benefit {
     display: flex;
+    gap: 30px;
 }
 
 .benefit-item {
@@ -223,6 +228,8 @@ img {
 }
 
 .work {
+    padding-top: 0;
+    padding-bottom: 94px;
     
 }
 
@@ -237,10 +244,19 @@ img {
 
 .work .list {
     gap: 30px;
+    display: flex;
+}
+
+.our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--secondary-bg-c);
 }
 
 .team {
     background-color: var(--secondary-bg-cl);
+    display: flex;
+    gap: 30px;
    
 }
 
@@ -278,7 +294,16 @@ img {
     color: var(--secondary-txt-cl);
 }
 
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
+.portfolio-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
 .portfolio .list {    
     background: #FFFFFF;
@@ -292,10 +317,11 @@ img {
 .pi {
     padding-top: 20px;
     padding-right: 24px;
-    padding-bottom: 4px;
+    padding-bottom: 20px;
     padding-left: 24px;
     border-left: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
 }
 
 
@@ -313,8 +339,6 @@ img {
 }
 
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-color: #2F303A;
 }
 
